@@ -1,5 +1,4 @@
-def my_each(array) # put argument(s) here
-  # code here
+def my_each(array)
   if block_given?
     i = 0
   while i < array.length
@@ -9,6 +8,7 @@ def my_each(array) # put argument(s) here
   array
 else 
   puts "Hey! No block was given!"
+end
 end
 
 my_each([1,2,3,4]) do |i|
